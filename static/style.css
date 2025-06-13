@@ -1,0 +1,28 @@
+body { background: #f5f6fa; font-family: 'Inter','PingFang SC',sans-serif; }
+.main-container { max-width: 900px; margin: 40px auto; }
+h1 { font-size: 2em; margin-bottom: 30px; text-align: center; letter-spacing: 2px; }
+.search-bar { display: flex; justify-content: center; margin-bottom: 24px; }
+.search-bar input { flex: 1; font-size: 1.2em; border-radius: 24px; border:1px solid #bfcbe7; padding: 0.7em 1.7em; margin-right: 12px;}
+.search-bar button { font-size: 1.1em; border-radius: 24px; padding: 0.7em 1.5em; background: #1976d2; color: #fff; border: none;}
+.card-list { display: flex; flex-wrap: wrap; gap: 18px; }
+.trademark-card { background: #fff; border-radius: 14px; box-shadow: 0 2px 12px #0001; padding: 18px 20px; flex: 1 1 350px; min-width: 300px; max-width: 420px; display: flex; flex-direction: column; }
+.card-header { display: flex; align-items: center; gap: 7px; margin-bottom: 10px; }
+.cat-badge { background: #e3f0ff; color: #1976d2; border-radius: 8px; padding: 0 8px; font-size: 0.97em; }
+.code { color: #bbb; font-size: 0.96em; margin-left: 3px;}
+.title { font-weight: 600; margin-left: 8px; }
+.excerpt { font-size: 1.05em; color: #444; margin-bottom: 10px; }
+.detail-btn { align-self: flex-end; background: #1976d2; color: #fff; border: none; border-radius: 8px; padding: 0.4em 1.2em;}
+.stats-panel { background: #e9eef7; border-radius: 10px; padding: 12px 20px; margin-bottom: 18px;}
+.cat-tag { margin: 0 5px; background: #ececec; border-radius: 6px; padding: 0 7px; color: #1976d2;}
+mark { background: #ffe066; color: #222; border-radius: 3px; font-weight: bold; padding: 0 2px;}
+.modal-backdrop { position:fixed;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;z-index:100;}
+.modal-content { background: #fff; border-radius: 14px; padding: 36px 28px; min-width: 300px; max-width: 600px; box-shadow:0 4px 32px #0002;}
+.detail-body { font-size: 1.13em; margin-top: 20px; line-height: 1.7; word-break: break-all;}
+.close-btn { margin-top: 18px; background: #1976d2; color: #fff; border: none; border-radius: 8px; padding: 0.5em 1.5em;}
+.cat-badge {
+    white-space: nowrap;
+}
+@media (max-width: 700px) {
+  .main-container { max-width: 99vw; padding: 0 2vw;}
+  .card-list { flex-direction: column;}
+}
