@@ -1,0 +1,75 @@
+# 商标查询系统 Apache 配置文件
+
+# 启用重写引擎
+RewriteEngine On
+
+# 强制 HTTPS（如果已配置SSL）
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# 禁止访问敏感文件
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(sql|log|ini|conf|md)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# 保护配置文件
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# 启用压缩
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# 浏览器缓存
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/png "access plus 3 months"
+    ExpiresByType image/jpg "access plus 3 months"
+    ExpiresByType image/jpeg "access plus 3 months"
+    ExpiresByType image/gif "access plus 3 months"
+    ExpiresByType image/svg+xml "access plus 3 months"
+    ExpiresByType image/x-icon "access plus 1 year"
+</IfModule>
+
+# 安全响应头
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    # 如需启用CSP，取消下面注释并调整
+    # Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';"
+</IfModule>
+
+# PHP 设置
+<IfModule mod_php7.c>
+    php_value upload_max_filesize 10M
+    php_value post_max_size 10M
+    php_value max_execution_time 300
+    php_value max_input_time 300
+    php_value memory_limit 256M
+    php_flag display_errors off
+    php_flag log_errors on
+    php_value error_log logs/php_errors.log
+</IfModule>
+
+# 禁止目录列表
+Options -Indexes
+
+# 默认字符集
+AddDefaultCharset UTF-8
+
+# 错误页面
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
