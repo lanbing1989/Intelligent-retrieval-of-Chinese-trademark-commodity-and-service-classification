@@ -328,9 +328,12 @@ function e($str) {
     <div class="footer-wrap">
         <footer class="footer">
             <span style="font-size:1.2rem;margin-right:8px;">📚</span>
-            基于 <strong>"类似商品和服务区分表——基于尼斯分类第十二版（2024文本）"</strong> 构建
+            基于 <strong>"类似商品和服务区分表——基于尼斯分类第十二版（2024文本）"</strong> 构建<br>
             <a class="footer-link" href="index.php">返回搜索</a>
             <a class="footer-link" href="https://sbj.cnipa.gov.cn/sbj/sbsq/sphfwfl/" target="_blank" rel="noopener">商标局官网</a>
+            <a class="footer-link" href="http://jinghong.me/yyzz.jpg" target="_blank" rel="noopener">营业执照</a>
+            <a class="footer-link" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37083002370893" target="_blank" rel="noopener">鲁公网安备37083002370893号</a>
+            <a class="footer-link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">鲁ICP备2026012160号-2</a>
         </footer>
     </div>
 

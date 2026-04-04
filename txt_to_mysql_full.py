@@ -401,9 +401,9 @@ if __name__ == "__main__":
         # 使用默认配置
         db_config = DatabaseConfig(
             host=os.getenv('DB_HOST', 'localhost'),
-            user=os.getenv('DB_USER', 'r_zhuli_pro'),
-            password=os.getenv('DB_PASS', 'Sfptryfe822ytHh5'),
-            database=os.getenv('DB_NAME', 'r_zhuli_pro')
+            user=os.getenv('DB_USER', 'username'),
+            password=os.getenv('DB_PASS', 'password'),
+            database=os.getenv('DB_NAME', 'trademark_db')
         )
         
         importer = TrademarkImporter(db_config, '45.txt')

@@ -1,0 +1,83 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "df81eae336fec7b89255a351305ff11e",
+    "packages": [
+        {
+            "name": "fukuball/jieba-php",
+            "version": "0.42.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fukuball/jieba-php.git",
+                "reference": "aee1e1d76c1728fefb97ce44eb19aecc43382423"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fukuball/jieba-php/zipball/aee1e1d76c1728fefb97ce44eb19aecc43382423",
+                "reference": "aee1e1d76c1728fefb97ce44eb19aecc43382423",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "doctrine/instantiator": "^1.3",
+                "guzzlehttp/guzzle": "^7.0",
+                "php-coveralls/php-coveralls": "^2.5",
+                "phpunit/phpunit": "^8.5 || ^9.0",
+                "psr/log": "^1.1",
+                "squizlabs/php_codesniffer": "^3.6 || ^4.0",
+                "symfony/config": "^5.4",
+                "symfony/console": "^5.4",
+                "symfony/deprecation-contracts": "^2.5",
+                "symfony/filesystem": "^5.4",
+                "symfony/service-contracts": "^2.5",
+                "symfony/stopwatch": "^5.4",
+                "symfony/string": "^5.4",
+                "symfony/yaml": "^5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/vendor/multi-array/MultiArray.php",
+                    "src/vendor/multi-array/Factory/MultiArrayFactory.php"
+                ],
+                "psr-4": {
+                    "Fukuball\\Jieba\\": "src/class/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "fukuball",
+                    "email": "fukuball@gmail.com"
+                }
+            ],
+            "description": "結巴中文分詞（PHP 版本）：做最好的 PHP 中文分詞、中文斷詞組件",
+            "keywords": [
+                "Jieba",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/fukuball/jieba-php/issues",
+                "source": "https://github.com/fukuball/jieba-php/tree/0.42.2"
+            },
+            "time": "2025-07-19T05:50:28+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

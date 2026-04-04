@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="中国商标商品服务分类智能检索系统，基于尼斯分类第十二版，支持智能分词搜索">
     <meta name="keywords" content="商标查询,尼斯分类,商品服务分类,商标检索">
-    <title>中国商标商品服务分类智能检索</title>
+    <title>惊鸿科技-中国商标商品服务分类智能检索</title>
     <link rel="stylesheet" href="static/style.css?v=2">
 </head>
 <body>
@@ -79,6 +79,9 @@
             基于 <span style="font-weight:600;">"类似商品和服务区分表——基于尼斯分类第十二版（2024文本）及NCL12-2025"</span> 构建<br>
             <a class="footer-link" href="all_categories.php">查看全部分类</a>
             <a class="footer-link" href="https://sbj.cnipa.gov.cn/sbj/sbsq/sphfwfl/" target="_blank" rel="noopener">商标局官网</a>
+            <a class="footer-link" href="http://jinghong.me/yyzz.jpg" target="_blank" rel="noopener">营业执照</a>
+            <a class="footer-link" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37083002370893" target="_blank" rel="noopener">鲁公网安备37083002370893号</a>
+            <a class="footer-link" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">鲁ICP备2026012160号-2</a>
         </footer>
     </div>
 

@@ -6,9 +6,9 @@
 
 // 数据库配置
 define('DB_HOST', getenv('DB_HOST') ?: 'localhost');
-define('DB_NAME', getenv('DB_NAME') ?: '');
-define('DB_USER', getenv('DB_USER') ?: '');
-define('DB_PASS', getenv('DB_PASS') ?: '');
+define('DB_NAME', getenv('DB_NAME') ?: 'trademark_db');
+define('DB_USER', getenv('DB_USER') ?: 'username');
+define('DB_PASS', getenv('DB_PASS') ?: 'password');
 define('DB_CHARSET', 'utf8mb4');
 
 // 分页配置
@@ -25,7 +25,7 @@ define('CACHE_ENABLED', true);
 define('CACHE_TTL', 300); // 5分钟
 
 // 安全配置
-define('RATE_LIMIT_ENABLED', false); // 如需启用请确保 tmp 目录可写
+define('RATE_LIMIT_ENABLED', true);
 define('RATE_LIMIT_REQUESTS', 60); // 每分钟最大请求数
 define('RATE_LIMIT_WINDOW', 60);
 

@@ -6,6 +6,11 @@
 
 require_once __DIR__.'/../config.php';
 
+// 检查速率限制
+if (!checkRateLimit()) {
+    errorResponse('请求过于频繁，请稍后再试', 429);
+}
+
 try {
     $pdo = getDB();
     
@@ -53,5 +58,6 @@ try {
     ]);
     
 } catch (Exception $e) {
-    errorResponse('获取分类列表失败: ' . $e->getMessage(), 500);
+    logMessage('Categories error: ' . $e->getMessage(), 'ERROR');
+    errorResponse('获取分类列表失败，请稍后重试', 500);
 }

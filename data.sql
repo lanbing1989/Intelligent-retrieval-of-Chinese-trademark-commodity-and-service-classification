@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.44, for Linux (x86_64)
 --
--- Host: localhost    Database: r_zhuli_pro
+-- Host: localhost    Database: trademark_db
 -- ------------------------------------------------------
 -- Server version	5.7.44-log
 
@@ -72,11 +72,11 @@ INSERT INTO `subclass` VALUES (1,1,'0101','工业气体,单质','(一)氨*010061
 UNLOCK TABLES;
 
 --
--- Dumping events for database 'r_zhuli_pro'
+-- Dumping events for database 'trademark_db'
 --
 
 --
--- Dumping routines for database 'r_zhuli_pro'
+-- Dumping routines for database 'trademark_db'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -88,4 +88,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-10 12:48:25
+-- Dump completed on 2026-04-04 12:21:48
