@@ -1,28 +1,18 @@
 
-&lt;div align="center"&gt;
-
 # 🚀 SBFL - 中国商标分类智能检索系统
 
-&lt;p align="center"&gt;
-  &lt;img src="https://img.shields.io/badge/PHP-7.4%2B-777BB4?style=for-the-badge&amp;logo=php" alt="PHP Version"&gt;
-  &lt;img src="https://img.shields.io/badge/MySQL-5.7%2B-4479A1?style=for-the-badge&amp;logo=mysql" alt="MySQL Version"&gt;
-  &lt;img src="https://img.shields.io/badge/Status-Stable-green?style=for-the-badge" alt="Status"&gt;
-  &lt;img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License"&gt;
-&lt;/p&gt;
+![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-777BB4?style=for-the-badge&amp;logo=php)
+![MySQL Version](https://img.shields.io/badge/MySQL-5.7%2B-4479A1?style=for-the-badge&amp;logo=mysql)
+![Status](https://img.shields.io/badge/Status-Stable-green?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
-&lt;p align="center"&gt;
-  基于尼斯分类第十二版（2024文本）及NCL12-2025构建的专业商标分类查询系统
-&lt;/p&gt;
+基于尼斯分类第十二版（2024文本）及NCL12-2025构建的专业商标分类查询系统
 
-[功能特性](#✨-功能特性) • [快速开始](#🚀-快速开始) • [技术架构](#🏗️-技术架构) • [API文档](#📡-api-文档)
-
-&lt;/div&gt;
+[功能特性](#-功能特性) • [快速开始](#-快速开始) • [技术架构](#-技术架构) • [API文档](#-api-文档)
 
 ---
 
 ## ✨ 功能特性
-
-&lt;div align="center"&gt;
 
 | 核心功能 | 用户体验 | 管理能力 |
 |---------|---------|---------|
@@ -32,8 +22,6 @@
 | 📊 双视图模式 | 🎨 平滑过渡动画 | |
 | 📄 详情弹窗 | ⬆️ 一键返回顶部 | |
 | 📑 分页加载 | | |
-
-&lt;/div&gt;
 
 ## 🎯 系统亮点
 
@@ -109,21 +97,21 @@ cp config.php config.local.php
 
 ```
 sbfl/
-├── 📁 api/                    # RESTful API 接口
+├── api/                    # RESTful API 接口
 │   ├── search.php            # 搜索接口
 │   ├── detail.php            # 详情接口
 │   ├── categories.php        # 分类列表接口
 │   └── test.php              # 健康检查
-├── 📁 static/                # 静态资源
+├── static/                # 静态资源
 │   └── style.css             # 样式表
-├── 📄 index.php              # 首页入口
-├── 📄 all_categories.php     # 分类浏览页
-├── 📄 config.php             # 配置文件（模板）
-├── 📄 data.sql               # 数据库结构与数据
-├── 📄 txt_to_mysql_full.py   # 数据导入工具
-├── 📄 .htaccess              # Apache 配置
-├── 📄 nginx.conf             # Nginx 配置
-└── 📄 composer.json          # 依赖管理
+├── index.php              # 首页入口
+├── all_categories.php     # 分类浏览页
+├── config.php             # 配置文件（模板）
+├── data.sql               # 数据库结构与数据
+├── txt_to_mysql_full.py   # 数据导入工具
+├── .htaccess              # Apache 配置
+├── nginx.conf             # Nginx 配置
+└── composer.json          # 依赖管理
 ```
 
 ---
@@ -311,13 +299,7 @@ export DB_PASS=your_password
 
 ---
 
-&lt;div align="center"&gt;
-
 **数据来源**: 类似商品和服务区分表——基于尼斯分类第十二版（2024文本）及NCL12-2025
 
-&lt;br&gt;
-
 Made with ❤️ by the SBFL Team
-
-&lt;/div&gt;
 
